@@ -56,6 +56,7 @@ export const HeaderNavLinks = [
     },
     {
         title : "Services",
-        url : "#"
+        url : "#services",
+        id: "#services"
     }
 ]

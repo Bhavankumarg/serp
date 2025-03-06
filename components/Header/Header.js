@@ -1,11 +1,10 @@
-'use client';
+"use client";
 import { HeaderNavLinks } from "@/utils/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +27,16 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
-        {HeaderNavLinks.map((link, index) => (
-          <Link
-            key={index}
-            href={link.url}
-            className="hidden md:block text-black font-medium hover:text-red-700"
-          >
-            {link.title}
-          </Link>
-        ))}
+          {HeaderNavLinks.map((link, index) => (
+            <Link
+              id={link.id}
+              key={index}
+              href={link.url}
+              className="text-black font-medium hover:text-red-700"
+            >
+              {link.title}
+            </Link>
+          ))}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -48,15 +48,17 @@ const Header = () => {
       {/* Mobile Navigation */}
       {isOpen && (
         <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 flex flex-col space-y-4 items-start px-6">
-          <a href="#" className="text-black font-medium hover:text-red-700">
-            SERP
-          </a>
-          <a href="/case-stories" className="text-black font-medium hover:text-red-700">
-            Case Stories
-          </a>
-          <a href="#" className="text-black font-medium hover:text-red-700">
-            Services
-          </a>
+          {HeaderNavLinks.map((link, index) => (
+            <Link
+              id={link.id}
+              key={index}
+              href={link.url}
+              className="text-black font-medium hover:text-red-700"
+              onClick={() => setIsOpen(false)} // Close menu when a link is clicked
+            >
+              {link.title}
+            </Link>
+          ))}
         </nav>
       )}
     </header>
