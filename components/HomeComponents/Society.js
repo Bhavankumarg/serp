@@ -7,7 +7,7 @@ const Society = () => {
   return (
     <>
       <div className="lg:flex items-center justify-center container mx-auto py-12 space-x-6">
-        <div className="lg:w-[50%] px-5 lg:px-0">
+        <div className="lg:w-[50%] px-5">
           <h1 className="text-3xl font-medium mb-4">
             The Society for Elimination of Rural Poverty (SERP) was established
             by the Government of Andhra Pradesh (GOAP)
@@ -32,7 +32,7 @@ const Society = () => {
       </div>
       <div className="container mx-auto flex items-center justify-center">
         <Image
-          src="/Home/certificate.png"
+          src="/Home/Banner-Emp.jpg"
           alt="Certificate"
           width={1200}
           height={600}
