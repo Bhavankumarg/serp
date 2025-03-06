@@ -7,7 +7,7 @@ export const HomeBannerCardsData = [
     imgClassName : "",
     title : "Sri N. Chandrababu Naidu",
     subTitle : "Hon’ble Chief Minister",
-    description : "Government of Andra Pradesh"
+    description : "Government of Andhra Pradesh"
 },
 {
     imgUrl : "/Home/minister.png",
