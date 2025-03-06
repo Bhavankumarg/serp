@@ -1,0 +1,66 @@
+'use client';
+import { HeaderNavLinks } from "@/utils/data";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
+
+
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className="bg-white shadow-md absolute z-10 w-full">
+      <div className="container mx-auto flex items-center justify-between py-3 px-6">
+        {/* Logo */}
+        <div className="flex items-center space-x-4">
+          <Link href="/">
+            <Image
+              width={50}
+              height={50}
+              src="/Home/logo.svg"
+              alt="LogoSerp"
+              className="h-10 w-auto"
+            />
+          </Link>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-6">
+        {HeaderNavLinks.map((link, index) => (
+          <Link
+            key={index}
+            href={link.url}
+            className="hidden md:block text-black font-medium hover:text-red-700"
+          >
+            {link.title}
+          </Link>
+        ))}
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <IoMdClose size={28} /> : <GiHamburgerMenu size={28} />}
+        </button>
+      </div>
+
+      {/* Mobile Navigation */}
+      {isOpen && (
+        <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 flex flex-col space-y-4 items-start px-6">
+          <a href="#" className="text-black font-medium hover:text-red-700">
+            SERP
+          </a>
+          <a href="/case-stories" className="text-black font-medium hover:text-red-700">
+            Case Stories
+          </a>
+          <a href="#" className="text-black font-medium hover:text-red-700">
+            Services
+          </a>
+        </nav>
+      )}
+    </header>
+  );
+};
+
+export default Header;
