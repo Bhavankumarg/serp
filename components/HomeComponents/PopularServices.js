@@ -54,15 +54,7 @@ const PopularServices = () => {
         },
       ],
     },
-    {
-      name: "Unnathi",
-      subServices: [
-        {
-          name: "unnathi",
-          link: "https://www.sthreenidhi.ap.gov.in/unnathi/UI/Home.aspx",
-        },
-      ],
-    },
+
     {
       name: "Insurance Services",
       subServices: [
@@ -75,18 +67,32 @@ const PopularServices = () => {
       ],
     },
     {
-      
-
+      name: "Unnathi",
+      subServices: [
+        {
+          name: "unnathi",
+          link: "https://www.sthreenidhi.ap.gov.in/unnathi/UI/Home.aspx",
+        },
+      ],
+    },
+    {
       name: "Admin/Finance Services",
       subServices: [
-        { name: "Annual Works & Finance Plan", link: "https://www.serp.ap.gov.in/AWFP/" },
+        {
+          name: "Annual Works & Finance Plan",
+          link: "https://www.serp.ap.gov.in/AWFP/",
+        },
         { name: "HRMS", link: "https://www.serp.ap.gov.in/HRMSAP/" },
-        
       ],
     },
     {
       name: "General Services",
-      subServices: [{ name: "Staff Performance", link: "https://www.ikp.serp.ap.gov.in/PMSC/LoginPage.aspx" }],
+      subServices: [
+        {
+          name: "Staff Performance",
+          link: "https://www.ikp.serp.ap.gov.in/PMSC/LoginPage.aspx",
+        },
+      ],
     },
   ];
 
@@ -103,8 +109,11 @@ const PopularServices = () => {
   };
 
   return (
-    <div className="bg-[#EC9E34] lg:flex flex-col justify-center items-center" id="services">
-       <div className="text-center container mx-auto py-12">
+    <div
+      className="bg-[#EC9E34] lg:flex flex-col justify-center items-center"
+      id="services"
+    >
+      <div className="text-center container mx-auto py-12">
         <h2 className="text-3xl">Popular Services</h2>
         <p className="pt-5 px-5 lg:px-0">
           With this in mind, SERP has relentlessly worked on a unique structure
@@ -113,7 +122,7 @@ const PopularServices = () => {
           and 13 Zilla Samakhyas.
         </p>
       </div>
-      <div className="lg:grid grid-cols-3 gap-6 w-full max-w-5xl space-y-6 lg:space-y-0 pb-20 px-5 lg:px-0">
+      <div className="lg:grid grid-cols-3 gap-6 w-full max-w-5xl space-y-6 lg:space-y-0 lg:pb-40 pb-16 px-5 lg:px-0">
         {services.map((service, index) => (
           <div key={index} className="relative">
             <div
