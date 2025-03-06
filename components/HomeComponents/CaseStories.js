@@ -7,21 +7,21 @@ const CaseStories = () => {
     <>
       <div className="bg-[#F5E582] lg:pb-20 pb-5 lg:pt-10 lg:mt-10 mt-5">
         <h1 className="text-center text-3xl p-4">Case Stories</h1>
-        <div className="flex container mx-auto flex-col lg:flex-row items-center justify-center">
-          <div className="lg:mt-5">
+        <div className="flex container mx-auto flex-col lg:flex-row items-center justify-center lg:gap-16 gap-7">
+          <div className="lg:mt-5 px-5">
             <Link href="/case-stories">
             <Image
               src="/Home/CaseStoriesBanner.png"
               alt="Case Stories Banner"
               width={1200}
               height={1000}
-              className="w-full p-5 lg:p-0"
+              className="lg:w-[40vw] p-0 border border-red-300 rounded-md"
             /></Link>
           </div>
-          <div className="p-5 lg:w-1/2 leading-8">
+          <div className="px-5 lg:w-[40%] leading-8 text-lg">
             <p>
-              &quot;Reaching for the Skies&quot; is a collection of 100
-              empowering stories showcasing how women of Andhra Pradesh have
+              <b>&quot;Reaching for the Skies&quot; is a collection of 100
+              empowering stories</b> showcasing how women of Andhra Pradesh have
               transcended financial uncertainties to become flourishing
               entrepreneurs. Through the support of Self-Help Groups and
               government initiatives, these women have not only established

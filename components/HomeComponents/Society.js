@@ -13,7 +13,7 @@ const Society = () => {
           </h1>
         </div>
 
-        <div className="lg:w-[50%] px-5 lg:px-0">
+        <div className="lg:w-[50%] px-5 lg:px-0 text-lg">
           <p>
             as a sensitive support structure to facilitate poverty reduction
             through social mobilization and improvement of Livelihoods of rural

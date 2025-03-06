@@ -16,8 +16,8 @@ export const HomeBannerCardsData = [
     imgHeight : 100,
     imgClassName : "border-[#9F0A09] border rounded-md",
     title : "Sri Kondapalli Srinivas",
-    subTitle : "Hon’ble Minister",
-    description : "MSME, SERP, NRI Empowerment & Relations Government of Andra Pradesh"
+    subTitle : "Minister of MSME, SERP & NRI Empowerment",
+    description : " Government of Andra Pradesh"
 }
 
 ] 
