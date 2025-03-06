@@ -18,9 +18,9 @@ const Header = () => {
             <Image
               width={50}
               height={50}
-              src="/Home/logo.svg"
+              src="/Home/logo-serp.png"
               alt="LogoSerp"
-              className="h-10 w-auto"
+              className="h-10 w-full"
             />
           </Link>
         </div>
