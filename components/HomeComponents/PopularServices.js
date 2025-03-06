@@ -113,12 +113,12 @@ const PopularServices = () => {
       className="bg-[#EC9E34] lg:flex flex-col justify-center items-center"
       id="services"
     >
-      <div className="text-center container mx-auto py-12">
-        <h2 className="text-3xl">Popular Services</h2>
-        <p className="pt-5 px-5 lg:px-0 text-lg">
+      <div className=" container mx-auto py-12">
+        <h2 className="text-4xl font-bold text-center">Popular Services</h2>
+        <p className="pt-5 px-5 lg:px-0 text-lg lg:text-center text-left">
           SERP has relentlessly worked on a unique structure
           of community based organization by organizing 69,31,113 rural women
-          into 6,52,440 SHGs, 26,753 Village Organizations, 656 Mandal Samakhyas
+          into 6,52,440 SHGs,<br className="hidden lg:block"/> 26,753 Village Organizations, 656 Mandal Samakhyas
           and 13 Zilla Samakhyas.
         </p>
       </div>

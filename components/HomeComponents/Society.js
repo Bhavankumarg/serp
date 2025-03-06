@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { GoArrowRight } from "react-icons/go";
 
@@ -15,16 +16,18 @@ const Society = () => {
 
         <div className="lg:w-[50%] px-5 lg:px-0 text-lg">
           <p>
-            as a sensitive support structure to facilitate poverty reduction
+            SERP is a sensitive support structure to facilitate poverty reduction
             through social mobilization and improvement of Livelihoods of rural
             poor in Andhra Pradesh. As per the Andhra Pradesh Reorganisation
             Act, 2014, SERP is divided into AP SERP and TG SERP for implementing
-            Indira Kranthi Patham (IKP).
+            Indira Kranthi Patham (IKP)
           </p>
-          <button className="bg-[#DA2927] text-white p-2 rounded-lg flex items-center gap-2 justify-center w-40 mt-3">
-            Explore More
-            <GoArrowRight />
-          </button>
+          <Link href="https://www.serp.ap.gov.in/SHGAP/" target="_blank">
+            <button className="bg-[#DA2927] text-white p-2 rounded-lg flex items-center gap-2 justify-center w-40 mt-3 hover:bg-white hover:text-[#DA2927] border border-[#DA2927]">
+              Explore More
+              <GoArrowRight />
+            </button>
+          </Link>
         </div>
       </div>
       <div className="container mx-auto flex items-center justify-center">
