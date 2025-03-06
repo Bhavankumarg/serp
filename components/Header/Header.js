@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow-md w-full">
-      <div className="container mx-auto flex items-center justify-between py-3 px-6">
+      <div className="container mx-auto flex items-center justify-between  px-6">
         {/* Logo */}
         <div className="flex items-center space-x-4">
           <Link href="/">
@@ -20,7 +20,18 @@ const Header = () => {
               height={50}
               src="/andhra-pradesh-state--emblem-seeklogo.svg"
               alt="LogoSerp"
-              className="h-auto w-40"
+              className="h-auto w-60"
+            />
+          </Link>
+        </div>
+        <div className="flex items-center space-x-4">
+          <Link href="/">
+            <Image
+              width={50}
+              height={50}
+              src="/Text.svg"
+              alt="LogoSerp"
+              className="h-auto w-[500px]"
             />
           </Link>
         </div>
