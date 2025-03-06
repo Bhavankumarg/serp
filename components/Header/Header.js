@@ -18,7 +18,7 @@ const Header = () => {
             <Image
               width={50}
               height={50}
-              src="/andhra-pradesh-state-new-emblem-seeklogo.svg"
+              src="/andhra-pradesh-state--emblem-seeklogo.svg"
               alt="LogoSerp"
               className="h-20 w-full"
             />
