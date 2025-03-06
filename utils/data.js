@@ -48,7 +48,8 @@ export const HomeBannerSliderData = [
 export const HeaderNavLinks = [
     {
         title : "SERP",
-        url : "#"
+        url : "https://www.serp.ap.gov.in/SHGAP/",
+        target: "_blank"
     },
     {
         title : "Case Stories",

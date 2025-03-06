@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const CaseStories = () => {
@@ -8,15 +9,16 @@ const CaseStories = () => {
         <h1 className="text-center text-3xl p-4">Case Stories</h1>
         <div className="flex container mx-auto flex-col lg:flex-row items-center justify-center">
           <div className="lg:mt-5">
+            <Link href="/case-stories">
             <Image
               src="/Home/CaseStoriesBanner.png"
               alt="Case Stories Banner"
               width={1200}
               height={1000}
               className="w-full p-5 lg:p-0"
-            />
+            /></Link>
           </div>
-          <div className="p-5 lg:w-1/2">
+          <div className="p-5 lg:w-1/2 leading-8">
             <p>
               &quot;Reaching for the Skies&quot; is a collection of 100
               empowering stories showcasing how women of Andhra Pradesh have

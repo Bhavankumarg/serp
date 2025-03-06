@@ -32,6 +32,7 @@ const Header = () => {
               id={link.id}
               key={index}
               href={link.url}
+              target={link.target}
               className="text-black font-medium hover:text-red-700"
             >
               {link.title}
