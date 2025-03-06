@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-md absolute z-10 w-full">
+    <header className="bg-white shadow-md w-full">
       <div className="container mx-auto flex items-center justify-between py-3 px-6">
         {/* Logo */}
         <div className="flex items-center space-x-4">
@@ -20,7 +20,7 @@ const Header = () => {
               height={50}
               src="/andhra-pradesh-state--emblem-seeklogo.svg"
               alt="LogoSerp"
-              className="h-20 w-full"
+              className="h-auto w-40"
             />
           </Link>
         </div>

@@ -117,9 +117,9 @@ const PopularServices = () => {
         <h2 className="text-4xl font-bold text-center">Popular Services</h2>
         <p className="pt-5 px-5 lg:px-0 text-lg lg:text-center text-left">
           SERP has relentlessly worked on a unique structure
-          of community based organization by organizing 69,31,113 rural women
-          into 6,52,440 SHGs,<br className="hidden lg:block"/> 26,753 Village Organizations, 656 Mandal Samakhyas
-          and 13 Zilla Samakhyas.
+          of community based organization by organizing <b>69,31,113</b> rural women
+          into <b>6,52,440</b> SHGs,<br className="hidden lg:block"/> <b>26,753</b> Village Organizations, <b>656</b> Mandal Samakhyas
+          and <b>13</b> Zilla Samakhyas.
         </p>
       </div>
       <div className="lg:grid grid-cols-3 gap-6 w-full max-w-5xl space-y-6 lg:space-y-0 lg:pb-40 pb-16 px-5 lg:px-0">
