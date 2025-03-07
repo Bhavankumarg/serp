@@ -100,7 +100,7 @@ const FlipBook = () => {
           allowFullScreen
         />
         <button
-          className="lg:top-10 top-2 lg:right-10 right-1 rounded-full p-2 text-white h-10 w-10 absolute  bg-[#C4161B]"
+          className="lg:top-10 top-2 lg:right-10 right-1 rounded-full p-2 text-white h-10 w-10 absolute  bg-[#C4161B] cursor-pointer"
           onClick={() => router.push("/")}
         >
           ✕

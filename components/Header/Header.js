@@ -59,7 +59,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md py-4 flex flex-col space-y-4 items-start px-6">
+        <nav className="md:hidden absolute z-10 top-11 left-0 w-full bg-white shadow-md py-4 flex flex-col space-y-4 items-start px-6">
           {HeaderNavLinks.map((link, index) => (
             <Link
               id={link.id}
