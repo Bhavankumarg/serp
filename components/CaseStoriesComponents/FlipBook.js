@@ -93,7 +93,7 @@ const FlipBook = () => {
             top: "0px",
             overflow: "hidden",
           }}
-          src="https://heyzine.com/flip-book/ebd7c4feab.html"
+          src="https://heyzine.com/flip-book/2deb227221.html"
           seamless
           frameBorder={0}
           allowTransparency="true"
